@@ -21,7 +21,7 @@ export default function Home() {
     };
   }, []);
 
-  const { todos, isLoading: _isLoading, error: _error, mutate } = useTodos();
+  const { todos, mutate } = useTodos();
   // postリクエスト
   const inputRef = useRef<HTMLInputElement>(null);
 
